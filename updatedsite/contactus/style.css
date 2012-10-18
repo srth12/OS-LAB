@@ -1,0 +1,139 @@
+/*html {
+	margin-bottom: 1px;
+	overflow-y: scroll;
+	height: 100%;
+}
+
+body {
+	width: 1026px;
+	background: #444;
+	padding: 20px 0 0 0;
+	color: white;
+	margin: 0 auto;
+}
+*/
+a, a:link, a:visited {
+	color: lightblue;
+	-webkit-transition: color .4s linear;
+	-moz-transition: color .4s linear;
+	-o-transition: color .4s linear;
+	-ms-transition: color .4s linear;
+	transition: color .4s linear;
+}
+
+a:hover, a:focus {
+	color: white;
+}
+
+p {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p.bottom {
+	clear: both;
+	padding-top: 40px;
+}
+
+	#container {
+		overflow: hidden;
+		/*padding: 0 0 60px 6px;*/
+		z-index:10;
+	}
+
+	h1 {
+		text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: normal;
+	}
+
+	form {
+		margin: 0 auto;
+		padding: 30px;
+	}
+
+		fieldset {
+			border: none;
+			width: 360px;
+			margin: 0 auto;
+			padding: 0 0 0 60px;
+		}
+
+		form div {
+			height: 70px;
+			padding: 0 0 15px 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+			form div.ta {
+				height: auto;
+			}
+
+				label {
+					display: block;
+					font-family: Arial, Helvetica, sans-serif;
+					padding: 0 0 5px 0;
+					color:#ffffff;
+				}
+
+				input {
+					background: #e2e2e2;
+					border: none;
+					width: 280px;
+					height: 30px;
+					font-size: 20px;
+					padding: 5px;
+					-webkit-transition: width 1s ease;
+					-moz-transition: width 1s ease;
+					-o-transition: width 1s ease;
+					-ms-transition: width 1s ease;
+					transition: width 1s ease;
+				}
+
+				input:focus, textarea:focus {
+					width: 340px;
+				}
+
+				input[type="submit"] {
+				margin-top:50px;
+					font-size: 15px;
+					position:relative;
+					padding: 0 20px;
+					width: auto;
+					color:#000
+				}
+
+				textarea {
+					width: 282px;
+					height: 110px;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 17px;
+					padding: 3px;
+					border: none;
+					resize: vertical;
+					-webkit-transition: width 1s ease;
+					-moz-transition: width 2s ease;
+					-o-transition: width 2s ease;
+					-ms-transition: width 2s ease;
+					transition: width 2s ease;
+				}
+				/* dim effect*/
+				
+<!-- another dim effect-->
+ .darkenBackground {
+background-color: rgb(0, 0, 0);
+opacity: 0.7; /* Safari, Opera */
+-moz-opacity:0.70; /* FireFox */
+filter: alpha(opacity=70); /* IE */
+z-index: 20;
+height: 100%;
+width: 100%;
+background-repeat:repeat;
+position:fixed;
+top: 0px;
+left: 0px;
+}

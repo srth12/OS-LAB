@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<meta name="keywords" content="iste nitc, nitc, iste , technical education, Iste NITC, nit calicut" />
+
+<meta name="description" content="" />
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<title>ISTE NITC Students' Chapter</title>
+
+<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+<link href='css/default.css' rel='stylesheet' type='text/css'>
+
+<!--js for drop down menu-->
+<script>
+var i=0;
+function fn(v){
+	
+     //document.write(v);
+	 if(window.XMLHttpRequest){
+	 xmlhttp= new XMLHttpRequest();
+	 }
+	 else{
+	xmlhttp=new ActiveXObject("Microsoft.XMLHttp");
+	}
+	
+	xmlhttp.open("GET","imglib.xml",false);
+	xmlhttp.send();
+	xmlDoc=xmlhttp.responseXML;
+	var t=xmlDoc.getElementsByTagName("p"+v)[0].childNodes[0].nodeValue;
+	
+	document.getElementById("slide").innerHTML="<img src="+t+" style='width:500px;height:100px' />";
+//	document.writeln(t.nodeValue);
+//document.write(t);
+
+}
+setInterval(function(){ fn(++i%2);},2000);
+</script>
+
+
+
+
+<!-- dd menu -->
+
+<script type="text/javascript">
+<!-- delaying scrolling-->
+function delay(h){
+	h.stop();
+}
+	
+		
+
+
+<!--
+
+var timeout         = 500;
+
+var closetimer		= 0;
+
+var ddmenuitem      = 0;
+
+
+
+// open hidden layer
+
+function mopen(id)
+
+{	
+
+	// cancel close timer
+
+	mcancelclosetime();
+
+
+
+	// close old layer
+
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+
+
+	// get new layer and show it
+
+	ddmenuitem = document.getElementById(id);
+
+	ddmenuitem.style.visibility = 'visible';
+
+
+
+}
+
+// close showed layer
+
+function mclose()
+
+{
+
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+}
+
+
+
+// go close timer
+
+function mclosetime()
+
+{
+
+	closetimer = window.setTimeout(mclose, timeout);
+
+}
+
+
+
+// cancel close timer
+
+function mcancelclosetime()
+
+{
+
+	if(closetimer)
+
+	{
+
+		window.clearTimeout(closetimer);
+
+		closetimer = null;
+
+	}
+
+}
+
+
+
+// close layer when click-out
+
+document.onclick = mclose; 
+
+// -->
+
+</script>
+
+<!-- js for drop down menu ends here-->
+
+</head>
+
+<body>
+<div id="sponsor">
+<a href="sponsor.html"><img src="./images/sponsor.png" title="go to sponsors page" alt="Sponsorship" width="15%" height="10%" style="right:0px;top:0px; z-index:12;position:absolute;" alt="sponsor's link"/></a>
+</div>
+
+
+<div id="wrapper">
+
+	<div id="header-wrapper">
+
+		<div id="header">
+
+			<div id="logo">
+
+				<img  src="images/headerf.png" id="logo" /> 
+         <!--   <div id="slide">
+</div> -->
+			</div></div>
+
+		</div>
+
+	</div>
+
+	<!-- end #header -->
+<div id="menuline"></div>
+	<div id="sddm">
+
+		<ul>
+
+			<li ><a href="./index.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Home</a>
+
+
+
+<!--		<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+
+		<a href="#">HTML DropDown</a>
+
+		
+
+        		</div>--></li>
+				<li ><a href="./aboutus.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">About us</a>
+
+
+
+<!--		<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+
+		<a href="#">HTML DropDown</a>
+
+		
+
+        		</div>--></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<li><a href="./events.html" onmouseover="mopen('m2')" onmouseout="mclosetime()">Events</a>
+
+		<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+
+		<a href="cworkshop.html">Career Workshop</a>
+
+        <a href="aks.html">A.K.S</a>
+
+		<a href="spectrum.html">Spectrum '12</a>
+
+		<a href="icon.html">iCON '13</a>
+
+		<a href="madangles.html">Mad Angles</a>
+
+		<a href="arbitt.html">Arbitt</a>
+
+		</div></li>
+
+			<li><a href="#" onmouseover="mopen('m3')" onmouseout="mclosetime()">Resources</a>
+
+			<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+
+	
+
+		<a href="results.html">Results</a>
+
+		<a href="qpaper.html">Previous Question Paper</a>
+
+
+		
+
+		</div></li>
+
+			<li><a href="#" onmouseover="mopen('m4')" onmouseout="mclosetime()">People</a>
+
+		<div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+
+		<a href="prof.html">Prof-in Charge</a>
+
+		<a href="panel.html">Student Advisors</a>
+
+		<a href="panel3.html">The Panel</a>
+
+		
+
+		 
+
+		</div></li>
+
+			<li><a href="./contact.html" onmouseover="mopen('m5')" onmouseout="mclosetime()">Contact us</a>
+
+		<div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+
+		<!--<a href="#">HTML DropDown</a>
+
+		<a href="#">DHTML DropDown menu</a>
+
+		<a href="#">JavaScript DropDown</a>
+
+		<a href="#">DropDown Menu</a>
+
+		<a href="#">CSS DropDown</a> -->
+
+		</div></li>
+
+		<!--	<li><a href="./gal.html" onmouseover="mopen('m6')" onmouseout="mclosetime()">Gallery</a>-->
+
+		<div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+
+		<!--<a href="#">HTML DropDown</a>
+
+		<a href="#">DHTML DropDown menu</a>
+
+		<a href="#">JavaScript DropDown</a>
+
+		<a href="#">DropDown Menu</a>
+
+		<a href="#">CSS DropDown</a> -->
+
+		</div></li>
+
+<div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+
+		
+
+		</div></li>
+
+			<li><a href="./gallery.html" onmouseover="mopen('m6')" onmouseout="mclosetime()">Gallery</a>
+
+		<div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+
+		
+
+		</div></li>
+
+		</ul>
+
+	</div>
+
+	<!-- end #menu -->
+
+	<div id="page" style="height:800px;">
+
+		<div id="page-bgtop">
+
+			<div id="page-bgbtm">
+
+				
+
+				<div id="sidebar">
+
+                <ul>
+
+						<li>
+
+							<h2 style="font-size:22px;">Mission</h2>
+
+							<p style="position:relative; top:-20px;">To foster the technical acumen of students.
+
+							</p>
+
+						</li>
+
+					<!--	<li>
+
+							<h2>Updates</h2>
+
+							<ul>
+
+							<ul>
+
+								<li><a href="contact.html">Contact</a></li>
+
+								<!--<li><a href="#">Gallery</a></li>
+
+								<li><a href="#">Favourites</a></li>
+
+								</ul>
+
+						</li> -->
+
+					
+
+                  					<li>
+
+							<h2 style="font-size:22px;">Upcoming Events</h2>
+
+							<ul style="position:relative; top:-20px;">
+
+								
+
+							<!--	<li><a href="cworkshop.html">Career Workshop</a></li>-->
+							<li > <a href="arbitt.html">Arbitt</a> </li>
+								<li><a href="spectrum.html">Spectrum '12</a></li>
+								<li><a href="icon.html">iCON '13</a></li>
+							</ul>
+
+						</li>
+
+						
+
+					</ul>
+
+				</div>
+
+				<!-- end #sidebar -->
+				<div id="content">
+					<div id="photoo" style="position:relative; top:-40px;">
+					<img src="images/mainimage.jpg" style="height:250px; width:600px;"/>
+					</div>
+					<div class="post" style="position:relative; top:-125px;">
+
+						<h2 class="title" style="color:black; font-family:monotype corsiva;">Welcome to ISTE</h2><hr style="width:600px;">
+
+						<p class="meta" style="font-size:15px" >
+
+							 We drive technology that drives the world!</p>
+
+						<div class="entry">
+
+						<!--	<p><img src="images/img04.jpg" width="186" height="186" alt="" class="alignleft border" />-->
+
+		<div style="overflow:auto; height:540px; width:700px">					
+
+<table cellpadding="0" cellspacing="0" style="width:680px;">
+
+<tr>
+
+<td style="color:#0f1010; font-size:16px; letter-spacing:0px;">
+
+
+
+							<h3 style="font-size:22px;">Updates</h3><hr style="width:25%;"><br/>
+							<a href="./mockgate.html" style="color:black;">Mock Gate Result</a><br/>
+							<a href="./mockgateqn.html" style="color:black;" >Mock Gate Solutions</a>
+							
+<!--
+											
+								<li><strong> <u>AKS 2012 Results </u> </strong><br/>
+								<marquee direction="up" scrolldelay="150" onmouseover="delay(this)" onmouseout="start(this)" ><ul> <li> <b> 1st Prize: </b>Vishal Karthik K <br/>
+								<b> 2nd Prize: </b>Deepak Sirone J <br/>
+								<b> 3rd Prize: </b>Francis Cilwin <br/> 
+								<strong>Consolation Prizes: </strong> <br/>
+								Pooja Roy <br/>
+								Raghav Pandey <br/>
+								Mrityunjay Kumar <br/>
+								Divya T George </li> </ul>
+                               </marquee>
+								</li>
+								-->
+								<!--
+								<li><a href="Eventdetails.pdf" target="_blank" style="color:#000000;">ISTE NITC Students' Chapter is organising the International Business Summit of IIM Ahmedebad, the Confluence '12, for the first time representing the Kerala zone<a></li>
+								-->
+
+								<!--<li><a href="#">Gallery</a></li>
+
+								<li><a href="#">Favourites</a></li>--> 
+
+								</ul>
+
+							</td>
+
+</tr>
+
+</table>
+
+</div>
+
+						</div>
+
+					</div>
+
+					
+
+					<div style="clear: both;">&nbsp;</div>
+
+				</div>
+
+				<!-- end #content -->
+
+				<div style="clear: both;">&nbsp;</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- end #page -->
+
+</div>
+
+<iframe src="https://www.facebook.com/plugins/like.php?href=www.facebook.com/istenitc"
+
+        scrolling="no" frameborder="0"
+
+        style="border:none; width:50px; height:50px;position:fixed;top:200px;left:0px;z-index:1000;"></iframe>	
+        	
+<!--<div id="leftbg"></div>
+<div id="rightbg"></div> -->
+
+<div id="footer">
+<a href="https://plus.google.com/108214254839986810790" rel="publisher">Find us on Google+</a>
+<p STYLE="color:black;">Developed and Maintained by</p>
+
+<p STYLE="color:black;">ISTE Web design team </p> <p STYLE="color:black;"> Pragatheeswaran (praga@istenitc.org) &nbsp; &nbsp; &nbsp; Sarath Babu (srth@istenitc.org) <br/> Tushar Chouhan (tushar@istenitc.org) &nbsp; &nbsp; &nbsp; Kiran Ganji(gkiran@istenitc.org)</p>
+
+	<p STYLE="color:black;">Copyright &copy; 2012 </p>
+
+</div>
+
+<!-- end #footer -->
+
+</body>
+
+</html>
+

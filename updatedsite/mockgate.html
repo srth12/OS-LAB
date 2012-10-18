@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Moke Gate</title>
+</head>
+
+<body>
+<a href="./index.html">Home</a>
+<script>
+function fn(v){
+	
+     
+	 if(window.XMLHttpRequest){
+	 xmlhttp= new XMLHttpRequest();
+	 }
+	 else{
+	xmlhttp=new ActiveXObject("Microsoft.XMLHttp");
+	}
+	
+	xmlhttp.open("GET","mockgate.xml",false);
+	xmlhttp.send();
+	xmlDoc=xmlhttp.responseXML;
+	var t=xmlDoc.getElementsByTagName(v)[0].childNodes[0].nodeValue;
+	
+	document.getElementById("ok").innerHTML="<iframe src="+t+" style='border:none; width:100%; height:500px;position:fixed;top:50px;left:20px;z-index:1000;'></iframe>";
+//	document.writeln(t.nodeValue);
+}
+</script>
+<table>
+<tr>
+<td>Select Branch</td>
+<td>
+<select name="branch" onchange="fn(this.value)">
+<option value="">select-here</option>
+<option value="v1">Bio-Technology</option>
+<option value="v2">Computer Science</option>
+<option value="v3">Chemical Engineering</option>
+<option value="v4">Civil Engineering</option>
+<option value="v5">Electrical Engineering</option>
+<option value="v6">Electronic Engineering</option>
+<option value="v7"> Mechanical Engineering</option>
+</select>
+</table>
+<p id="ok"></p>
+</body>
+</html>
