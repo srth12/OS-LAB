@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <images>
-<p0>images/icon.jpg</p0>
-<u0>I love Iste</u0>
-<p1>images/mainimage.jpg</p1>
-<u1>I hate Nitc</u1>
+<q0>Spectrum '12</q0>
+<p0>images/spec.jpg</p0>
+<url0>spectrum.html</url0>
+<u0>One of the most awaited events organized by ISTE, Spectrum '12 is coming soon to give the first years a second chance to bring their engineering-cum-managment 
+skills to the fore, after Tathva. [Click here to know more about Spectrum] </u0>
+
+<q1>ISTE NITC Students' Chapter</q1>
+<p1>images/about.jpg</p1>
+<url1>aboutus.html</url1>
+<u1>Headquartered in New Delhi, ISTE has the distinction of being a fraternity of students spread across premier technical education institutes in the country, 
+including the top IITs....[Read more about ISTE NITC Students' Chapter]</u1>
+
+<q2>Career Workshop '12</q2>
+<p2>images/cw.jpg</p2>
+<url2>cw.html</url2>
+<u2> Career Workshop, an important and successful event of ISTE, was held on 15th and 16th of September 2012. More than 150 students....[Read more about Career Workshop '12]</u2>
 </images>

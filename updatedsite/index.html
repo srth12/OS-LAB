@@ -43,8 +43,12 @@ function fn(v){
    xmlDoc=xmlhttp.responseXML;
 	var t=xmlDoc.getElementsByTagName("p"+v)[0].childNodes[0].nodeValue;
 	var zi=xmlDoc.getElementsByTagName("u"+v)[0].childNodes[0].nodeValue;
-	document.getElementById("slide").innerHTML="<img src="+t+" style=' width:600px;height:250px' />";
-	document.getElementById("slidedown").innerHTML=zi;
+	var rr=xmlDoc.getElementsByTagName("url"+v)[0].childNodes[0].nodeValue;
+	//document.write(rr);
+	var r=xmlDoc.getElementsByTagName("q"+v)[0].childNodes[0].nodeValue;
+	document.getElementById("heading").innerHTML=r;
+	document.getElementById("slide").innerHTML="<img src="+t+" style=' width:71%;height:85%' />";
+	document.getElementById("slidedown").innerHTML="<a href='./"+rr+"'>"+zi+"</a>";
     }
   }
 	xmlhttp.open("GET","imglib.xml",true);
@@ -57,7 +61,7 @@ function fn(v){
 //document.write(t);
 
 }
-setInterval(function(){ fn(++i%2);},2000);
+setInterval(function(){ fn(++i%3);},5000);
 </script>
 
 
@@ -170,7 +174,7 @@ document.onclick = mclose;
 
 <body>
 <div id="sponsor">
-<a href="sponsor.html"><img src="./images/sponsor.png" title="go to sponsors page" alt="Sponsorship" width="15%" height="10%" style="right:0px;top:0px; z-index:12;position:absolute;" alt="sponsor's link"/></a>
+<a href="sponsor.html"><img src="./images/sponsor.png" title="go to sponsors page" alt="Sponsorship" width="15%" height="10%" style="right:0px;top:0px; z-index:12;position:absolute;" /></a>
 </div>
 
 
@@ -208,7 +212,7 @@ document.onclick = mclose;
 		
 
         		</div>--></li>
-				<li ><a href="./aboutus.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">About us</a>
+				
 
 
 
@@ -347,9 +351,9 @@ document.onclick = mclose;
 
 						<li>
 
-							<h2 style="font-size:22px;">Mission</h2>
+							<h2 style="font-size:24px;">Mission</h2>
 
-							<p style="position:relative; top:-20px;">To foster the technical acumen of students.
+							<p >To foster the technical acumen of students.
 
 							</p>
 
@@ -377,9 +381,9 @@ document.onclick = mclose;
 
                   					<li>
 
-							<h2 style="font-size:22px;">Upcoming Events</h2>
+							<h2 style="font-size:24px;">Upcoming Events</h2>
 
-							<ul style="position:relative; top:-20px;">
+							<ul>
 
 								
 
@@ -401,26 +405,24 @@ document.onclick = mclose;
 				<div id="content">
 					<div id="photoo" style="position:relative; top:-40px;">
 				<!--	<img src="images/mainimage.jpg" style="height:250px; width:600px;"/>-->
+				<strong> <div id="heading" style="color:black; font-family:monotype corsiva; font-size:23px;"> </div> </strong>
+				
 				<div id="slide">
-</div> 
-<div id="slidedown" >
+</div>
+<div id="slidedown" style="height:250px;font-family:Georgia; width:500px;" >
 </div> 
 					</div>
-					<div class="post" style="position:relative; top:-125px;">
+					<!--<div class="post" style="position:relative; top:-125px;"> -->
 
-						<h2 class="title" style="color:black; font-family:monotype corsiva;">Welcome to ISTE</h2><hr style="width:600px;">
+						
 
-						<p class="meta" style="font-size:15px" >
-
-							 We drive technology that drives the world!</p>
-
-						<div class="entry">
+						
 
 						<!--	<p><img src="images/img04.jpg" width="186" height="186" alt="" class="alignleft border" />-->
 
-		<div style="overflow:auto; height:540px; width:700px">					
-
-<table cellpadding="0" cellspacing="0" style="width:680px;">
+		<!--<div style="z-index:3;position:absolute;margin-top:150px;padding:-300px; height:540px; width:700px">					
+-->
+<table cellpadding="0" cellspacing="0" style="width:680px; position:relative;top:60px;">
 
 <tr>
 
@@ -429,9 +431,12 @@ document.onclick = mclose;
 
 
 							<h3 style="font-size:22px;">Updates</h3><hr style="width:25%;"><br/>
-							<a href="./mockgate.html" style="color:black;">Mock Gate Result</a><br/>
-							<a href="./mockgateqn.html" style="color:black;" >Mock Gate Solutions</a>
-							
+							<a href="./mockgate.html" target="_blank" style="color:black;">Mock Gate Result</a><br/>
+							<a href="./mockgateqn.html" target="_blank" style="color:black;" >Mock Gate Solutions</a> <br/>
+							<a href="https://docs.google.com/open?id=0Bw8LuiNBLSfBeEhBNkNENmVpV1E" target="_blank" style="color:black;" >Mock GRE Results</a> <br/>
+                            <a href="https://docs.google.com/open?id=0B9QvTU7YcN0reGRXY2hZeXkzVFU" target="_blank" style="color:black;" >Mock GRE New Pattern Questions</a> <br/>
+                            <a href="https://docs.google.com/open?id=0B9QvTU7YcN0rWWgzclB5NTRXc0E" target="_blank" style="color:black;" >Mock GRE Answer Keys</a>
+                            
 <!--
 											
 								<li><strong> <u>AKS 2012 Results </u> </strong><br/>
@@ -462,11 +467,14 @@ document.onclick = mclose;
 
 </table>
 
+ <div id="slider"> </div>
+
+<!--
 </div>
+-->    
+						
 
-						</div>
-
-					</div>
+					<!--</div>-->
 
 					
 
